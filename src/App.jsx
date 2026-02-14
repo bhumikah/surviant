@@ -5,7 +5,7 @@ import ForgotPassword from './pages/ForgotPassword'
 import CheckInbox from './pages/CheckInbox'
 import ResetPassword from './pages/resetpassword'
 import UserProfile from './pages/UserProfile'
-
+import Dashboard from './components/Dashboard'
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +17,7 @@ function App() {
         <Route path="/check-inbox" element={<CheckInbox />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/user-profile" element={<UserProfile />} />
+ <Route path="/dashboard" element={<Dashboard />} />
 
       </Routes>
     </BrowserRouter>
@@ -24,3 +25,5 @@ function App() {
 }
 
 export default App
+
+
